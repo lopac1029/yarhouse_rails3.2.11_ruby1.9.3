@@ -1,0 +1,558 @@
+/* CSS Document */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+@font-face{font-family: lcars_header;src: url(fonts/tt0105m_.TTF);}
+@font-face{font-family: lcars_text;src: url(fonts/tt0106m0.TTF);}
+
+body{
+	background:#000000;
+	width:98%;
+	max-width:1150px;
+	margin-left:2%;
+	font-family:lcars_text;
+	color:#FFFFFF;
+	font-size:16px;
+	border: solid blue 0px;
+	}
+
+div#lcars{
+	width: 100%;
+	height:100%;
+}
+div#dnd, div#resume{display: none;}
+p, li{font-family:lcars_text;padding:.5% 1%;font-size:1.5em;list-style-type:none;}
+
+a:link{color:#9999FF;text-decoration:none;}
+a:hover{color:#FF6666;text-decoration:none;}
+a:visited{color:#CC66FF;text-decoration:none;}
+a.footer_links:link, a.footer_links:hover, a.footer_links:visited{color:black;text-decoration:none;}
+a.tweet:link{color:#000099;text-decoration:none;}
+a.tweet:hover,a.tweet:visited{color:#202020;text-decoration:none;}
+
+/* Top */
+
+/* Tweet Section */
+#tweet{
+	width:inherit;
+	float;left;
+	margin:1% 0% 1% 0%;
+	background-color:#CC6666;
+	border-right:solid #CC6666 5.5em ;
+	border-radius:15px 15px 0px 0px;
+	-webkit-border-radius:15px 15px 0px 0px;
+	-moz-border-radius:15px 15px 0px 0px;
+	}
+p.latest{
+	font-size: 1.325em;
+	color:black;
+	margin: 0% 1%;
+	padding: .5%;
+	border-color:#000000;
+	border-style:solid;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	}
+b.at{font-family: Courier;}
+b.tweet{
+	width:50%;
+	color:black;
+	padding: .5%;
+	border-color:#000000;
+	border-width:0px 10px;
+	border-style:solid;
+	}
+
+/* Header Section */
+#header{
+	width:inherit;
+	float: left;
+	border-left:solid #9999FF 3em ;
+	border-right:solid #9999FF 5.5em ;
+	border-radius:0px 0px 0px 20px;
+	-webkit-border-radius:0px 0px 0px 20px;
+	-moz-border-radius:0px 0px 0px 20px;
+	position:relative;
+	background-image:url('images/command.png');
+	background-repeat:no-repeat;
+	background-position:top right;
+	}
+p.title{font-family:lcars_header;font-size:2em;padding: 1%;float:left;}
+p.stardate{font-size:1.5em;float:right;margin-right: 10%;}
+
+/* Content Area */
+#contents{
+	width:inherit;
+	margin-top:1%;
+	border-left:solid #FF9900 0em ;
+	border-right:solid #9999FF 0em ;
+	border-radius:25px 0px 0px 25px;
+	float:left;
+	}
+#moving_bar{
+	color:black;
+	padding:1% 1% 1% 1%;
+	margin-top:1%;
+	width:3em;
+	min-height:6em;
+	position:relative;
+	background-color: #FF9900;
+	border-radius:25px 0px 0px 25px;
+	float:left;
+	animation:moving_bar 5s infinite;
+	animation-delay:1s;
+	-moz-animation:moving_bar 5s infinite; /* Firefox */
+	-moz-animation-delay:1s;
+	-webkit-animation:moving_bar 5s infinite; /* Safari and Chrome */
+	-webkit-animation-delay:1s;
+	}
+#moving_bar p{margin-top: 50%;}
+#markup{
+	background-image:url('images/ufop.png');
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	margin:2% 0% 2% 1%;
+	width:80%;
+	float:left;
+	border-right: solid green 0px;
+	}
+/* Menu Section */
+#menu_bar{
+	float:right;
+	margin-top:0%;
+	margin-right:0%;
+	background:black;
+	width:5.5em;
+	border-left: solid red 0px;
+	border-bottom:solid #9999FF 12em ;
+	border-radius:0px;
+	}
+ul.menu{margin:0%;}
+li.menu{
+	font-family: lcars_header;
+	text-align: center;
+	color:black;
+	border-radius:0px 10px 10px 0px;
+	width:100%;
+	font-size:1.8em;
+	float:right;
+	margin:0% 0% 10% 0%;
+	padding:10% 0% 10% 0%;
+	background:#9999FF;
+	transition:width .3s;
+	-moz-transition:width .3s; /* Firefox 4 */
+	-webkit-transition:width .3s; /* Safari and Chrome */
+	-o-transition:width .3s; /* Opera */	
+	}
+li.menu:hover{
+	color:black;
+	text-align: left;
+	padding-left: 10%;
+	border-radius:10px 10px 10px 10px;
+	width:150%;
+	background:#FF9900;
+	}
+
+/* Footer */
+#footer{
+	width:inherit;
+	margin:-.01% 0% 1% 0%;
+	background-color:#CC99CC;
+	border-left:solid #CC99CC 3em ;
+	border-right:solid #9999FF 5.5em ;
+	border-radius:10px 0px 20px 10px;
+	float:left;
+	}
+#footer p{
+	float: left;
+	width:100%;
+	height:1em;
+	padding:0% 1%;
+	color:black;
+	margin:0%;
+	border-color:#000000;
+	border-width:0em .5em;
+	border-style:solid;
+	display: inline;
+	position:relative;
+	animation:moving_footer 3s infinite;
+	animation-delay:2s;
+	-moz-animation:movingfooter 3s infinite; /* Firefox */
+	-moz-animation-delay:2s;
+	-webkit-animation:moving_footer 3s infinite; /* Safari and Chrome */
+	-webkit-animation-delay:2s;
+	}
+
+/* Main Page */
+img.profile{
+	border:solid #FF9900 .3em;
+	border-radius:5px;
+	width:25%;
+	vertical-align:text-bottom;
+	float:right;
+	margin:1% 2%;
+	padding:1%;
+	}
+b.name{
+	font-size:2em;
+	margin:5%;
+	padding:0% 2%;
+	border-color:#9999FF;
+	border-width:0em 1em;
+	border-style:solid;
+	border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	}
+p.bio{margin-top:2%;}
+p.note{	margin:0%;}
+.note b{font-size: 1.5em;color: #FF9900;}
+p.webmaster{font-size:1.25em;margin:5% 0% 0% 5%;}
+
+/* Starhip */
+div.ship{width:100%;}
+.ship p{
+	padding:0% 0% 0% 0%;
+	}
+div.ship_name{
+	background-color:#9999CC;
+	border-left:solid #9999CC 3em ;
+	border-right:solid #9999CC 5.5em;
+	border-radius:10px;
+	margin:2% 3%;
+	}
+.ship_name b{
+	background-color: black;
+	color: white;
+	font-size: 1.75em;
+	padding:1% 3%;
+
+	}
+
+div.dataset{width:45%;margin-left:5%;float:left;}
+.dataset li{font-size:1.50em;}
+li.tab{font-size:1em;margin-left:5%;}
+li.rare{color:#6699FF;}
+li.very_rare{color:#CC66FF;}
+li.common{color:#66FF66;}
+img.ship_wide{
+	padding:1%;
+	border-color:#FF9900;
+	border-width:.2em;
+	border-style:solid;
+	border-radius:5px;
+	width:90%;
+	margin: 1% 5%;
+	}
+img.ship_short{
+	padding:1%;
+	border-color:#FF9900;
+	border-width:.2em;
+	border-style:solid;
+	border-radius:5px;
+	width:40%;
+	margin:1% 0% 1% 6.5%;
+	}
+div.captain{
+	width:40%;
+	margin-left:30%;
+	border:#9999CC solid 0em;
+	}
+img.captain{
+	width:100%;
+	border:#FF9900 solid 0em;
+	}
+.captain p{
+	color:black;
+	font-size:1.9em;
+	padding-left:10%;
+	background:#9999CC;
+	border-radius:10px;
+	}
+div.crew{
+	width:30%;
+	margin:1% 10%;
+	border:#9999CC solid 0em;
+	float:left;
+	}
+img.crew {
+	width:100%;
+	border:#FF9900 solid 0em;
+	}
+.crew p{
+	color:black;
+	font-size:1.9em;
+	padding-left:10%;
+	background:#9999CC;
+	border-radius:10px;
+	}
+img.rank{float:right;margin-top:2%;}
+li.crew{font-size:1.25em;margin:2%;}
+
+@keyframes moving_bar{
+	0%		{top:00px;}
+	25%		{top:210px;}
+	50%		{top:210px;}
+	75%		{top:00px;}
+	100%	{top:00px;}
+	}
+	@-moz-keyframes moving_bar /* Firefox */{
+	0%		{top:00px;}
+	25%		{top:210px;}
+	50%		{top:210px;}
+	75%		{top:00px;}
+	100%	{top:00px;}
+	}
+	@-webkit-keyframes moving_bar /* Safari and Chrome */{
+	0%		{top:00px;}
+	25%		{top:210px;}
+	50%		{top:210px;}
+	75%		{top:00px;}
+	100%	{top:00px;}
+	}
+@keyframes button_hover{
+	0%		{background:#FF9900;border:#FF9900;}
+	100%	{background:#FF9900;border:#FF9900;}
+	}
+	@-moz-keyframes button_hover /* Firefox */{
+	0%		{background:#FF9900;border:#FF9900;}
+	100%	{background:#FF9900;border:#FF9900;}
+	}
+	@-webkit-keyframes button_hover /* Safari and Chrome */{
+	0%		{background:#FF9900;border:#FF9900;}
+	100%	{background:#FF9900;border:#FF9900;}
+	}
+
+@keyframes moving_footer{
+	0%		{left:00px;}
+	25%		{left:50px;}
+	50%		{left:50px;}
+	75%		{left:00px;}
+	100%	{left:00px;}
+	}
+@keyframes button_blink{
+	0%		{background-color:#FF9900;border-color:#FF9900;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	64%		{background-color:#FF9900;border-color:#FF9900;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	65%		{background-color:red;border-color:red;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	75%		{background-color:red;border-color:red;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	76%		{background-color:#FF9900;border-color:#FF9900;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	89%		{background-color:#FF9900;border-color:#FF9900;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	90%		{background-color:red;border-color:red;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	100%	{background-color:red;border-color:red;border-width:0px 20px 0px 20px;border-style:solid;border-radius:10px 10px 10px 10px;}
+	}
+
+
+
+@media (max-width: 500px){
+	p.latest{visibility: hidden;}
+	
+	/* Header Section */
+	#header{
+		border-left:solid #9999FF 1em ;
+		border-right:solid #9999FF 3em ;
+		border-radius:0px 0px 0px 10px;
+
+		}
+	p.title{font-size:1.25em;width:75%;}
+	p.stardate{font-size:1.25em;margin-right: 20%;}
+
+	/* Content Area */
+	#moving_bar{display: none;}
+	#markup{background-size:contain;}
+	
+	/* Menu Section */
+	#menu_bar{
+		width:3em;
+		border-bottom:solid #9999FF 3em ;
+		border-bottom-right-radius:10px;
+		}
+	li.menu{
+		border-radius:0px 5px 5px 0px;
+		font-size:1.15em;
+		margin:0% 0% 5% 0%;
+		}
+	li.menu:hover{
+		border-radius:5px;
+		}
+	/* Footer */
+	#footer{
+		margin:-.01% 0% 1% 0%;
+		border-left:solid #CC99CC 1em ;
+		border-right:solid #9999FF 3em ;
+		border-radius:5px 0px 10px 5px;
+		}
+
+	/* Main Page */
+	img.profile{display: none;}
+	b.name{font-size:1.5em;}
+	p.bio{font-size:1.25em;}
+	p.note{font-size:1.25em;}
+	.note b{font-size: 1.25em;color: #FF9900;}
+	p.webmaster{display: none;}
+
+	/* Starhip */
+	.ship p{
+		font-size:1.25em;
+		}
+	div.ship_name{
+		width:120%;
+		margin:5% 0% 5% .1% ;
+		border-left:solid #9999CC 1em ;
+		border-right:solid #9999CC 0em;
+		border-radius:5px;
+		}
+	.ship_name b{
+		background-color: black;
+		font-size: 1.20em;
+		padding:1% 2%;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		}
+	div.dataset{display: none;}
+
+	img.ship_wide, img.ship_short, img.captain, img.crew{
+		padding:1%;
+		border-color:#FF9900;
+		border-width:.15em;
+		border-style:solid;
+		border-radius:5px;
+		width:100%;
+		margin: 1% 1%;
+		}
+	div.captain, div.crew{
+		width:100%;
+		margin:1%;
+		}
+	.captain p, .crew p{
+		font-size:1.5em;
+		padding-left:5%;
+		border-radius:5px;
+		}
+	img.rank{float:right;margin-top:2%;}
+	li.crew{font-size:1.25em;margin:2%;}
+}
+
+@media (min-width: 501px) and (max-width: 800px){
+	/* Tweet Section */
+	#tweet{border-right:solid #CC6666 4.5em ;}
+
+	/* Header Section */
+	#header{
+		border-left:solid #9999FF 2em ;
+		border-right:solid #9999FF 4.5em ;
+		background-position:top right;
+		}
+	p.title{font-size:1.75em;}
+
+	/* Content Area */
+	#moving_bar{
+		width:2em;
+		min-height:6em;
+		border-radius:15px 0px 0px 15px;
+		}
+	#markup{
+		background-size:contain;
+		width:75%;
+		}
+	/* Menu Section */
+	#menu_bar{width:4.5em;}
+	li.menu{
+		border-radius:0px 7px 7px 0px;
+		font-size:1.35em;
+		}
+	li.menu:hover{border-radius:7px;}
+
+	/* Footer */
+
+	/* Main Page */
+	img.profile{
+		border:solid #FF9900 .15em;
+		border-radius:5px;
+		width:25%;
+		}
+	.note b{font-size: 1.25em;}
+
+	/* Starhip */
+	div.ship{width:100%;}
+	div.ship_name{
+		background-color:#9999CC;
+		border-left:solid #9999CC 1.5em ;
+		border-right:solid #9999CC 1em;
+		border-radius:10px;
+		}
+	.ship_name b{
+		background-color: black;
+		color: white;
+		font-size: 1.50em;
+		padding:1% 2%;
+		}
+	.ship p{
+		padding:3% 1%;
+		}
+	div.dataset{width:45%;margin-left:5%;float:left;}
+	.dataset li{
+		font-size:1.5em;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;}
+	li.tab{
+		font-size:1em;
+		margin-left:5%;
+		text-decoration:none;
+		}
+	li.rare{color:#6699FF;}
+	li.very_rare{color:#CC66FF;}
+	li.common{color:#66FF66;}
+	img.ship_wide{
+		padding:1%;
+		border-color:#FF9900;
+		border-width:.2em;
+		border-style:solid;
+		border-radius:5px;
+		width:90%;
+		margin: 1% 5%;
+		}
+	img.ship_short{
+		padding:1%;
+		border-color:#FF9900;
+		border-width:.2em;
+		border-style:solid;
+		border-radius:5px;
+		width:40%;
+		margin:1% 0% 1% 6.5%;
+		}
+	div.captain, div.crew{
+		width:80%;
+		margin-left:5%;
+		border:#9999CC solid 0em;
+		}
+	img.captain, img.crew{
+		float: left;
+		width:50%;
+		margin: 0% 2% 2% 0%;
+		border:#FF9900 solid 0em;
+		}
+	.captain p, .crew p{
+		color:black;
+		font-size:1.9em;
+		padding-left:2%;
+		background:#9999CC;
+		border-radius:10px;
+		}
+	img.rank{float:left;margin-top:2%;margin-left: 35%;}
+	li.crew{font-size:1.75em;margin:1%;}
+}
+
+@media (min-width: 501px) and (max-width: 700px) and (orientation:portrait){
+	p.title{font-size:1.55em;}
+	b.name{font-size:1.5em;}
+	div.captain, div.crew{
+		width:100%;
+		margin-left:2%;
+		border:#9999CC solid 0em;
+		}
+}
